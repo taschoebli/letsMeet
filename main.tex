@@ -1,0 +1,191 @@
+\documentclass[10pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[english, ngerman]{babel}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{breqn}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{lscape}
+\usepackage{blindtext}
+\usepackage{times}
+\usepackage{authblk}
+\usepackage{xcolor}
+
+\setlength{\mathindent}{0mm}
+\setlength{\columnsep}{0.8cm}
+\setlength\parindent{0pt} 	
+
+
+ \geometry{
+ a4paper,
+ total={190mm,270mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
+ 
+ \titleformat{\title}
+ {\normalfont\fontsize{11}{10}\bfseries}{\thesection}{1em}{} 
+ 
+ 
+ \titleformat{\section}
+  {\normalfont\fontsize{11}{10}\bfseries}{\thesection}{1em}{} 
+
+
+\titleformat{\subsection}
+  {\normalfont\fontsize{10}{5}\bfseries}{\thesection}{1em}{} 
+
+\renewcommand{\arraystretch}{1.3}
+
+%Path relative to the .tex file containing the \includegraphics command
+\graphicspath{ {figures/} }
+
+\definecolor{light-gray}{gray}{0.90}
+
+\date{}
+
+\makeatletter
+
+
+\usepackage{ragged2e}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcolumntype{J}[1]{>{\justifying\arraybackslash}p{#1}}
+
+\renewenvironment{abstract}
+ {\par\noindent\ignorespaces}
+ {\par\medskip}
+
+\renewcommand{\maketitle}{\setlength{\parindent}{0pt}
+\begin{flushleft}
+  \huge\@title
+  \par\vspace{1cm}
+  \normalsize\@author
+  \vspace{1cm}  
+  
+  \hrule
+  \begin{minipage}[t]{\textwidth}
+    \begin{minipage}[t]{0.25\textwidth}
+    \vspace{0.3cm}
+	Protokoll-Nr. 4 
+	Index 4
+    \vspace{0.3cm}
+	\hrule
+	\vspace{0.3cm}
+	\date{\today}
+	\vspace{0.3cm}
+	\end{minipage}
+	\begin{minipage}[t]{0.05\textwidth}
+	 \hfill
+	\end{minipage}
+	\begin{minipage}[t]{0.70\textwidth}
+	\begin{flushleft}    
+	\vspace{0.3cm}
+	\textbf{ORGANISATION IM TEAM}
+	\vspace{0.3cm}
+	
+\begin{tabularx}{11cm} { 
+   L{5cm}
+   L{6cm}
+  }
+ \toprule
+ Sitzung: & 29.06.2022 20.00 - 21.00 Uhr\\
+ Teilnehmer & Janick (JZ) \\
+ 			& Henry (HG) \\
+ 			& Luzi (LS) \\
+ 			& Lukas (LR) \\
+            & Patrick (PS)\\
+ Meeting & Google Meet \\
+ \end{tabularx}	
+\begin{abstract}
+\end{abstract}
+\end{flushleft}
+    \vspace{0.3cm}
+	\end{minipage}
+  \end{minipage}
+  
+  \hrule
+\end{flushleft}
+\vspace{1cm}
+
+}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+\title{Sitzungsprotokoll 4}
+\author{Janick Zehnder}
+\maketitle
+
+
+\colorbox{light-gray}{\begin{minipage}{17cm}
+\vspace{0.25cm}
+\section*{Ziele}
+\begin{itemize}
+\item Sommferferien 2022 und nächste Meetingdaten
+\item Latex Installations-Check
+\item Git Status
+\item Zwei begründete Ideenfavoriten
+\item komplexe vs. einfache Produktideen
+\end{itemize}
+\vspace{0.25cm}
+\end{minipage}}
+
+
+
+\section{Sommerferien 2022 und nächste Meetingdaten}
+\textbf{Sommerferien 2022:} XXX.\\
+\textbf{Nächste Meetingdaten} XXX\\
+
+\section{Latx Installations-Check}
+Hat bei jedem die Installation geklappt?\\
+Link im IT Ordner abgelegt?\\
+
+\section{Git Status}
+\textbf{LS:}\\
+
+\section{Zwei begründete Ideenfavoriten}
+\textbf{JZ:}\\
+\textbf{HG:}\\
+\textbf{LS:}\\
+\textbf{LR:}\\
+\textbf{PS:}\\
+
+\section{komplexe vs. einfache Produktideen}
+
+\vspace{2cm}
+\section*{Nächste Sitzung}
+29.06.2022 20:00 Uhr Google Meet
+
+\section*{Pendenzen}
+\begin{tabularx}{17cm} { 
+   C{1.0cm}
+   L{7cm}
+   C{2cm}
+   C{2cm}
+   C{2cm}
+  }
+ \toprule
+Pendenz & Beschreibung & Zuständig & Datum & Status \\
+\midrule
+01	& Anleitung zu Download TexMaker/Latex  & PS & 29.06.2022 & offen\\
+02	& Git aufsetzen & LS & 29.06.2022 & offen\\
+03 	& Zwei Themen von allen Ideen aussuchen und begründen & alle & 29.06.2022 & offen\\
+04  & Gedanken machen welche Richtung man einschlagen will: Komplexes Produkt oder einfachere Strukturen & alle & 29.06.2022 & offen\\ 
+\bottomrule
+ \end{tabularx}	
+
+\end{document}
+
